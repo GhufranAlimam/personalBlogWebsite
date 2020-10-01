@@ -1,0 +1,124 @@
+footer{
+    width: 100vw;
+    height: 80vh;
+    background-color: #7AB6E3;
+    background-image:url(../IMGS/footer-background.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+}
+
+.second-form{
+    padding: 5% 0;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.second-form  p {
+    font-size: 1.3rem;
+    color: #fff;
+    padding-bottom: 3%;
+}
+
+.second-form form{
+    display:flex;
+    justify-content: center;
+    margin-bottom: 3%;
+}
+.second-form input{
+    background-color: #FFF;
+    border: #FFF;
+    padding: .7em 3.5em;
+    text-align: center;
+    border-radius: 0.3em;
+    margin-right: 1.1em;
+}
+
+.second-form button{
+    background-color: #4C0ADA;
+    border: #4C0ADA;
+    border-radius: 0.3em;
+    padding: .4em 3.5em;
+    color: #FFF;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    transition: all 0.3s;
+}
+
+.second-form button:hover{
+    background-color:#38079F;
+    cursor: pointer;
+}
+
+.last-section{
+    width: 42%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-bottom: 3%;
+}
+
+.last-section  a{
+    text-decoration: none;
+    display: block;
+    color:#fff;
+    padding-bottom: 3%;
+    font-size: 1.1rem;
+}
+
+.last-section  a:hover{
+    color: #FFDE2D;
+}
+
+.first{
+    text-align:left;
+}
+
+.second{
+    text-align:right;
+}
+
+#happy-coding{
+    animation: rotation 20s linear infinite;
+}
+
+@media only screen and (max-width: 900px){
+    footer{
+        background-image: none;
+        background-color: #7AB6E3;
+        height: 60vh;
+    }
+
+    .second-form form{
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .second-form input{
+        margin-bottom: 1em;
+        margin-right: 0;
+    }
+
+    .last-section{
+        width: 50%;
+        display:flex;
+        justify-content: space-between;
+    }
+    
+    #happy-coding{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 470px){
+    .second-form button{
+        padding: .4em 0;
+    }
+    .second-form input{
+        font-size:.8em;
+    }
+    .second-form button{
+        font-size: 1em;
+    }
+}

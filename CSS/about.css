@@ -1,0 +1,174 @@
+.author{
+    margin-top: 0;
+    background-color: #7AB6E3;
+    background-image: url("../IMGS/about-me-background-blue-bottom.png");
+    height: 79vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
+.blocks{
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+}
+
+figure{
+   align-self: center;
+   margin-right: 5%;
+   margin-left: 5%;
+}
+figure img{
+    border-radius: 60%;
+    width: 10em;
+    border: 3px solid #7AB6E3;
+}
+
+figure figcaption{
+    color:  #4C0ADA;
+    margin-top: 4%;
+}
+
+#about{
+    font-size:2.2rem;
+    color:  #4C0ADA;
+    font-weight: bold;
+    line-height: 3rem;
+    padding-bottom: 0.8em;
+    padding-top: 1em;
+}
+
+.author p, #quote{
+    width:50%;
+    font-size: 1.1rem;
+    padding-bottom:1em;
+} 
+
+#about-me-circle{
+    position: absolute;
+    right: 14em;
+    top: 37em;
+    animation: rotation 20s linear infinite;
+}
+
+@keyframes rotation{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@media only screen and (max-width: 1630px){
+#about{
+    padding: 2rem 0;
+    font-size: 2rem;
+   }
+
+   .author p, #quote{
+       width: 60%;
+       font-size: 1.2rem;
+       padding-bottom: 1em;
+   }
+
+   .author{
+       margin-bottom: 5em;
+       height: 80vh;
+   }
+
+   .author:last-of-type{
+       margin-bottom: 0;
+   }
+
+   #about-me-circle{
+       width: 20%;
+       right: 9em;
+       top: 35em;
+   }
+}
+@media only screen and (min-width: 1290px) and (max-width: 1629px){
+    .author{
+        height: 100vh;
+    }
+
+    #about-me-circle{
+        top: 25em;
+    }
+}
+@media only screen and (max-width: 1289px){
+   .author{
+       height: 100vh;
+    }
+
+    #about-me-circle{
+        top: 27em;
+    }
+}
+
+@media only screen and (max-width: 1200px){
+    #about{
+        padding: 0.8rem 0;
+        font-size: 1.8rem;
+    }
+
+    .author{
+        height: 100vh;
+    }
+
+    .author p, #quote{
+        width: 70%;
+    }
+
+     #about-me-circle{
+         display:none;
+    }
+}
+
+@media only screen and (max-width: 970px){
+    .author{
+        padding-left: 2em;
+        height: 100vh;
+    }
+    .author p, #quote{
+        font-size: .9em;
+        padding-bottom: 0.2em;
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .author{
+        background-image: none;
+        background-color: #fff;
+        padding-left: 2em;
+        height: 100vh;
+    }
+    
+    .author p, #quote{
+        font-size: .8em;
+        padding-bottom: 0.3em;
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 700px){
+   .author{
+       height: 90vh;
+   }
+   figure {
+       display: none;
+   }
+}
+
+@media only screen and (max-width: 500px){
+    .author{
+        height: 100vh;
+    }
+    figure {
+        display: none;
+    }
+    .author p, #quote{
+        font-size: .8em;
+    }
+ }
